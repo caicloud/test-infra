@@ -24,4 +24,4 @@ RUN   apk update \
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 
 COPY needs_rebase /needs_rebase
-CMD ["/needs_rebase", "--dry-run=false", , "--plugin-config=/etc/plugins/plugins"]
+CMD ["/needs_rebase", "--dry-run=false", "--plugin-config=/etc/plugins/plugins"]
